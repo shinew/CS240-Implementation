@@ -1,4 +1,4 @@
--- Theta(m+n)
+-- O(m+n)
 merge :: Ord a => [a] -> [a] -> [a]
 merge x [] = x
 merge [] x = x
@@ -7,7 +7,7 @@ merge (x:xs) (y:ys) =
   then x : merge xs (y:ys)
   else y : merge (x:xs) ys
 
--- Theta(n log n)
+-- O(n log n)
 mergeSort :: Ord a => [a] -> [a]
 mergeSort [] = []
 mergeSort [x] = [x]
